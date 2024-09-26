@@ -5,7 +5,7 @@ import bookroute from './route/bookroute.js'
 import cors from "cors"
 import userroute from './route/userroute.js'
 
-const password = 'Adarsh1007#';
+const password = process.env.PASSWORD;
 const encodedPassword = encodeURIComponent(password);
 
 const app = express();
